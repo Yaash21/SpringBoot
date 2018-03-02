@@ -47,7 +47,7 @@ public class RestaurantController {
 
 	@GetMapping("/restaurant/{id}")
 	public ResponseEntity<Restaurant> searchById(@PathVariable int id) {
-		Restaurant searchRestaurant = restaurantService.findById(id);
+		Restaurant searchRestaurant = restaurantService.searchById(id);
 		return new ResponseEntity<Restaurant>(searchRestaurant, HttpStatus.OK);
 
 	}

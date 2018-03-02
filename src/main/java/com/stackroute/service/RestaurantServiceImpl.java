@@ -23,7 +23,7 @@ public class RestaurantServiceImpl implements RestaurantService {
 		return restaurant;
 	}
 
-	public Restaurant findById(int id) {
+	public Restaurant searchById(int id) {
 		return restaurantRepository.findById(id);
 
 	}

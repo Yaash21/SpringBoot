@@ -54,7 +54,7 @@ public class RestaurantControllerTest {
 		restaurant.setCostOfTwo(new BigDecimal(1100));
 
 		// Arrange
-		Mockito.when(restaurantService.findById(1)).thenReturn(restaurant);
+		Mockito.when(restaurantService.searchById(1)).thenReturn(restaurant);
 		// Act
 		// RequestBuilder requestBuilder =
 		// MockMvcRequestBuilders.get("/api/v1/restaurant/1");

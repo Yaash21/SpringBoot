@@ -11,7 +11,7 @@ public interface RestaurantService {
 
 	public Restaurant addRestaurant(Restaurant restaurant);
 
-	public Restaurant findById(int id);
+	public Restaurant searchById(int id);
 
 	public List<Restaurant> findAll();
 

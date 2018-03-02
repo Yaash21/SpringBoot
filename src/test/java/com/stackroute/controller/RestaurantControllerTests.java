@@ -93,7 +93,7 @@ public class RestaurantControllerTests {
 		restaurant1.setId(1);
 		restaurant1.setRestaurantLocation("Bangalore");
 		restaurant1.setCostOfTwo(new BigDecimal(1100));
-		given(restaurantService.findById(1)).willReturn(restaurant1);
+		given(restaurantService.searchById(1)).willReturn(restaurant1);
 		this.mvc.perform(get("/api/v1/restaurant/1")).andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
 				.andExpect(status().isOk()).andExpect(jsonPath("$.id", is(1)))
 				.andExpect(jsonPath("$.restaurantName", is("echo")))
